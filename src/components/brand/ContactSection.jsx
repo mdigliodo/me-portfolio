@@ -52,11 +52,11 @@ export default function ContactSection() {
                             className="flex flex-col gap-6 mb-16"
                         >
                             <a
-                                href="mailto:mateo@digliodo.com"
+                                href="mailto:mdigliodo@gmail.com"
                                 className="inline-flex items-center gap-3 text-white text-lg md:text-xl hover:text-[#aaa] transition-colors duration-300 group"
                             >
                                 <Mail className="w-5 h-5" />
-                                <span>mateo@digliodo.com</span>
+                                <span>mdigliodo@gmail.com</span>
                             </a>
                             <a
                                 href="https://linkedin.com/in/mateodigliodo"
@@ -68,13 +68,13 @@ export default function ContactSection() {
                                 <span>linkedin.com/in/mateodigliodo</span>
                             </a>
                             <a
-                                href="https://github.com/mateodigliodo"
+                                href="https://github.com/mdigliodo"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-3 text-white text-lg md:text-xl hover:text-[#aaa] transition-colors duration-300 group"
                             >
                                 <Github className="w-5 h-5" />
-                                <span>github.com/mateodigliodo</span>
+                                <span>github.com/mdigliodo</span>
                             </a>
                         </motion.div>
 
@@ -88,10 +88,13 @@ export default function ContactSection() {
                                 <p className="text-[#666] text-sm">
                                     Disponible para proyectos freelance y posiciones de liderazgo técnico
                                 </p>
-                                <button className="flex items-center gap-2 text-white text-sm px-6 py-3 border border-[#333] hover:border-[#555] transition-colors duration-300 w-fit">
+                                <a 
+                                href="https://docs.google.com/document/d/1Gj1d_rFZpjY9IRibaGpY6woHW4sABDgVHc2JPqoAx8E/edit?usp=sharing"
+                        target="_blank"
+                                className="flex items-center gap-2 text-white text-sm px-6 py-3 border border-[#333] hover:border-[#555] transition-colors duration-300 w-fit">
                                     <Download className="w-4 h-4" />
                                     <span>Descargar CV</span>
-                                </button>
+                                </a>
                             </div>
                         </motion.div>
                     </div>

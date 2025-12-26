@@ -152,7 +152,7 @@ export default function ProjectsSection() {
                         ¿Quieres ver más detalles técnicos?
                     </p>
                     <a
-                        href="https://github.com/mateodigliodo"
+                        href="https://github.com/mdigliodo"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-white text-sm tracking-wide hover:text-[#aaa] transition-colors duration-300 group"

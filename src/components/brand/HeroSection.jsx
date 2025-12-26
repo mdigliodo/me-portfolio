@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function HeroSection() {
     const scrollToProjects = () => {
@@ -47,10 +47,10 @@ export default function HeroSection() {
                     className="max-w-2xl mb-8"
                 >
                     <p className="text-[#aaa] text-xl md:text-2xl leading-relaxed font-light mb-4">
-                        Diseño y codifico cosas simples de manera hermosa.
+                        Transformando la complejidad en experiencias digitales excepcionales.
                     </p>
                     <p className="text-[#666] text-base md:text-lg leading-relaxed">
-                        Construyendo soluciones escalables y accesibles. 5+ años de experiencia 
+                        Construyendo soluciones escalables y accesibles. 7+ años de experiencia 
                         transformando ideas en productos digitales robustos.
                     </p>
                 </motion.div>
@@ -81,7 +81,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.5 }}
                     className="flex items-center gap-6 mt-16"
                 >
-                    <a href="https://github.com/mateodigliodo" target="_blank" rel="noopener noreferrer" 
+                    <a href="https://github.com/mdigliodo" target="_blank" rel="noopener noreferrer" 
                        className="text-[#666] hover:text-white transition-colors duration-300">
                         <Github className="w-5 h-5" />
                     </a>
@@ -89,7 +89,7 @@ export default function HeroSection() {
                        className="text-[#666] hover:text-white transition-colors duration-300">
                         <Linkedin className="w-5 h-5" />
                     </a>
-                    <a href="mailto:mateo@digliodo.com"
+                    <a href="mailto:mdigliodo@gmail.com"
                        className="text-[#666] hover:text-white transition-colors duration-300">
                         <Mail className="w-5 h-5" />
                     </a>
