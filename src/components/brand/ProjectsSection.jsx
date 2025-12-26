@@ -6,19 +6,19 @@ const projects = [
     {
         company: "Mutual IAC",
         role: "Founder & Full-stack Developer",
-        period: "2020 - Presente",
+        period: "Project",
         description: "Plataforma fintech que conecta comercios y consumidores con un sistema de crédito mutualista. Lideré el desarrollo completo desde la concepción hasta el escalado.",
         impact: [
             { metric: "270+", label: "Comercios adheridos" },
             { metric: "2.5K", label: "Transacciones mensuales" }
         ],
-        tech: ["Angular", "Material Design", "Node.js", "MySQL", "AWS"],
+        tech: ["Angular", "Material Design", "React", "Node.js", "MySQL", "AWS"],
         featured: true
     },
     {
         company: "Minsait (Indra)",
         role: "Angular Team Lead",
-        period: "2022 - 2023",
+        period: "Project",
         description: "Lideré equipo de desarrollo en proyecto gubernamental de alto impacto. Implementé estándares de accesibilidad (a11y) y optimicé performance de aplicaciones críticas.",
         impact: [
             { metric: "40%", label: "Mejora en performance" },
@@ -28,27 +28,75 @@ const projects = [
         featured: true
     },
     {
-        company: "Soho",
+        company: "Gasco",
         role: "Full-stack Developer",
-        period: "2021 - 2022",
-        description: "Sistema nacional de distribución de gas. Desarrollé interfaces altamente accesibles y escalables para operadores en todo el país.",
+        period: "Project",
+        description: "Sistema nacional de distribución de gas en Chile. Desarrollé interfaces altamente accesibles y escalables para operadores en todo el país.",
         impact: [
             { metric: "Nacional", label: "Cobertura" },
             { metric: "24/7", label: "Disponibilidad" }
         ],
-        tech: ["Angular", "Node.js", "AWS", "Real-time Systems"],
+        tech: ["Angular", "Node.js"],
         featured: false
     },
     {
-        company: "Transvip / GToken",
+        company: "Transvip",
         role: "Full-stack Developer",
-        period: "2020 - 2021",
+        period: "Project",
         description: "Migraciones complejas, implementación de microfrontends y desarrollo de soluciones Web3 para tokenización de activos.",
         impact: [
             { metric: "Web3", label: "Blockchain integration" },
             { metric: "Microfrontends", label: "Architecture" }
         ],
         tech: ["Angular", "React", "Blockchain", "Microservices"],
+        featured: false
+    },
+    {
+        company: "K-Sports Fantasy",
+        role: "Full-stack Developer",
+        period: "Project",
+        description: "Plataforma de Fantasy Football con economía propia. Permite adquirir jugadores (cromos), tácticas y gestionar equipos cuyo rendimiento depende de la performance real de los deportistas.",
+        impact: [
+            { metric: "Gameplay", label: "Fantasy Sports" },
+            { metric: "Economy", label: "In-game Market" }
+        ],
+        tech: ["Web3", "Angular", "Ionic", "Node.js", "Gamification"],
+        featured: false
+    },
+    {
+        company: "GToken",
+        role: "Full-stack Developer",
+        period: "Project",
+        description: "Plataforma de inversión para la industria de cría de caballos de polo. Los GTokens representan derechos sobre la venta futura, permitiendo participación en etapas tempranas.",
+        impact: [
+            { metric: "Tokenization", label: "Real World Assets" },
+            { metric: "Invest", label: "Platform" }
+        ],
+        tech: ["Web3", "Angular", "Ionic", "Node.js", "Smart Contracts"],
+        featured: false
+    },
+    {
+        company: "FAN Access Network",
+        role: "Full-stack Developer",
+        period: "Project",
+        description: "Marketplace Web3 para creadores de contenido. Facilita la oferta de productos y experiencias únicas directamente a la comunidad, eliminando intermediarios.",
+        impact: [
+            { metric: "Web3", label: "Creator Economy" },
+            { metric: "D2C", label: "Direct Comms" }
+        ],
+        tech: ["Web3", "Angular", "Ionic", "Node.js", "Marketplace", "Community"],
+        featured: false
+    },
+    {
+        company: "Zurich",
+        role: "Frontend Developer / UX",
+        period: "Project",
+        description: "Nuevo portal privado para corredores de seguros. Centralización de información y rediseño completo UX/UI basado en levantamiento de necesidades del negocio.",
+        impact: [
+            { metric: "Portal", label: "B2B System" },
+            { metric: "UX/UI", label: "Revamp" }
+        ],
+        tech: ["Angular", "Node.js", "UX Research", "Insurance"],
         featured: false
     }
 ];

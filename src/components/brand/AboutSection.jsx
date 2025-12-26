@@ -84,7 +84,7 @@ export default function AboutSection() {
                         >
                             <div className="flex flex-wrap gap-x-16 gap-y-8 pt-8 border-t border-[#222]">
                                 <div>
-                                    <p className="text-white text-4xl md:text-5xl font-light tracking-[-0.02em]">5+</p>
+                                    <p className="text-white text-4xl md:text-5xl font-light tracking-[-0.02em]">7+</p>
                                     <p className="text-[#666] text-sm mt-2">Años de Experiencia</p>
                                 </div>
                                 <div>
