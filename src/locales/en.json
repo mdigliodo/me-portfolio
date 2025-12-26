@@ -1,0 +1,226 @@
+{
+    "nav": {
+        "brand": "M. Digliodo",
+        "about": "About",
+        "projects": "Projects",
+        "hire": "Hire Me",
+        "contact": "Contact"
+    },
+    "hero": {
+        "role": "Software Engineer · Team Lead · Cloud Architect",
+        "name": "Mateo",
+        "surname": "Digliodo",
+        "tagline": "Transforming complexity into exceptional digital experiences.",
+        "description": "Building scalable and accessible solutions. 7+ years of experience transforming ideas into robust digital products.",
+        "cta_projects": "View Projects",
+        "cta_contact": "Contact Me"
+    },
+    "about": {
+        "label": "About Me",
+        "title": "Beyond code: engineer of scalable and accessible solutions.",
+        "desc1": "I combine advanced software engineering with technical leadership. My focus goes beyond code: I optimize performance, guarantee accessibility (a11y), and design scalable cloud architectures with AWS.",
+        "desc2": "With experience leading teams at top-tier consultancies and as founder of an active fintech platform, I bring an obsession for quality, performance, and clean code to every project.",
+        "skills": {
+            "fullstack": "Full Stack Development",
+            "leadership": "Team Leadership",
+            "cloud": "Cloud Architecture",
+            "a11y": "Accessibility (a11y)"
+        },
+        "metrics": {
+            "years": "Years of Experience",
+            "merchants": "Active Merchants",
+            "transactions": "Transactions/Month"
+        }
+    },
+    "services": {
+        "label": "Services",
+        "heading": "Technical expertise with product vision",
+        "items": [
+            {
+                "title": "Software Engineering",
+                "description": "Full Stack Development with Angular, Node.js, NestJS, and Cloud architecture with AWS. Robust, scalable, and maintainable solutions from design to deployment."
+            },
+            {
+                "title": "Technical Leadership",
+                "description": "Leading development teams, refactoring legacy systems, implementing best practices, and optimizing performance. Experience leading teams at Minsait."
+            },
+            {
+                "title": "Product Development",
+                "description": "From conception to launch. Experience founding and growing Mutual IAC, a fintech platform with +270 active merchants processing 2.5K monthly transactions."
+            }
+        ]
+    },
+    "projects": {
+        "label": "Portfolio",
+        "heading": "Projects driving real impact",
+        "more_details": "Want to see more technical details?",
+        "view_github": "View repositories on GitHub",
+        "featured_badge": "Featured",
+        "items": [
+            {
+                "company": "Mutual IAC",
+                "role": "Founder & Full-stack Developer",
+                "period": "Project",
+                "description": "Fintech platform connecting merchants and consumers with a mutual credit system. Led full development from conception to scaling.",
+                "impact": [
+                    {
+                        "metric": "270+",
+                        "label": "Merchants joined"
+                    },
+                    {
+                        "metric": "2.5K",
+                        "label": "Monthly transactions"
+                    }
+                ]
+            },
+            {
+                "company": "Minsait (Indra)",
+                "role": "Angular Team Lead",
+                "period": "Project",
+                "description": "Led development team in high-impact government project. Implemented accessibility standards (a11y) and optimized performance of critical applications.",
+                "impact": [
+                    {
+                        "metric": "40%",
+                        "label": "Performance improvement"
+                    },
+                    {
+                        "metric": "100%",
+                        "label": "a11y Compliance"
+                    }
+                ]
+            },
+            {
+                "company": "Gasco",
+                "role": "Full-stack Developer",
+                "period": "Project",
+                "description": "National gas distribution system in Chile. Developed highly accessible and scalable interfaces for operators nationwide.",
+                "impact": [
+                    {
+                        "metric": "National",
+                        "label": "Coverage"
+                    },
+                    {
+                        "metric": "24/7",
+                        "label": "Availability"
+                    }
+                ]
+            },
+            {
+                "company": "Transvip",
+                "role": "Full-stack Developer",
+                "period": "Project",
+                "description": "Complex migrations, microfrontends implementation, and Web3 solutions development for asset tokenization.",
+                "impact": [
+                    {
+                        "metric": "Web3",
+                        "label": "Blockchain integration"
+                    },
+                    {
+                        "metric": "Microfrontends",
+                        "label": "Architecture"
+                    }
+                ]
+            },
+            {
+                "company": "K-Sports Fantasy",
+                "role": "Full-stack Developer",
+                "period": "Project",
+                "description": "Fantasy Football platform with its own economy. Allows acquiring players (cards), tactics, and managing teams whose performance depends on real athlete performance.",
+                "impact": [
+                    {
+                        "metric": "Gameplay",
+                        "label": "Fantasy Sports"
+                    },
+                    {
+                        "metric": "Economy",
+                        "label": "In-game Market"
+                    }
+                ]
+            },
+            {
+                "company": "GToken",
+                "role": "Full-stack Developer",
+                "period": "Project",
+                "description": "Investment platform for the polo horse breeding industry. GTokens represent rights over future sales, allowing early-stage participation.",
+                "impact": [
+                    {
+                        "metric": "Tokenization",
+                        "label": "Real World Assets"
+                    },
+                    {
+                        "metric": "Invest",
+                        "label": "Platform"
+                    }
+                ]
+            },
+            {
+                "company": "FAN Access Network",
+                "role": "Full-stack Developer",
+                "period": "Project",
+                "description": "Web3 Marketplace for content creators. Facilitates offering unique products and experiences directly to the community, eliminating intermediaries.",
+                "impact": [
+                    {
+                        "metric": "Web3",
+                        "label": "Creator Economy"
+                    },
+                    {
+                        "metric": "D2C",
+                        "label": "Direct Comms"
+                    }
+                ]
+            },
+            {
+                "company": "Zurich",
+                "role": "Frontend Developer / UX",
+                "period": "Project",
+                "description": "New private portal for insurance brokers. Centralization of information and complete UX/UI redesign based on business needs assessment.",
+                "impact": [
+                    {
+                        "metric": "Portal",
+                        "label": "B2B System"
+                    },
+                    {
+                        "metric": "UX/UI",
+                        "label": "Revamp"
+                    }
+                ]
+            }
+        ]
+    },
+    "pricing": {
+        "label": "Collaboration & Freelance",
+        "title": "On-demand Professional Services",
+        "description": "Full-time availability to add value to your team or project from day one. No overhead, focused on results.",
+        "availability": "Available Full-time",
+        "model": {
+            "title": "Hourly Model",
+            "note": "Average price. Final value depends on technical complexity, duration, and tech stack.",
+            "cta": "Schedule Free Analysis",
+            "subtext": "Let's talk without commitment about your project to understand your real needs."
+        },
+        "features": [
+            "Requirements analysis",
+            "Scalable architecture",
+            "Code reviews & Mentoring",
+            "Frontend & Backend Development",
+            "Optimization & Performance",
+            "API & Cloud Integration"
+        ],
+        "stats": {
+            "years": "Years of Experience",
+            "availability": "Availability",
+            "remote": "Remote Reach"
+        }
+    },
+    "contact": {
+        "label": "Contact",
+        "title": "Let's build something scalable together",
+        "description": "Have a project in mind? Need a technical leader who understands both code and business? Let's talk about how I can help you build solutions that scale.",
+        "availability_note": "Available for freelance projects and technical leadership positions",
+        "download_cv": "Download CV"
+    },
+    "footer": {
+        "rights": "All rights reserved",
+        "built_with": "Built with React & Tailwind"
+    }
+}

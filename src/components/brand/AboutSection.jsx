@@ -2,16 +2,18 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Code2, Users, Rocket, Award } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function AboutSection() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const { t } = useTranslation();
 
     const skills = [
-        { icon: Code2, label: "Full Stack Development" },
-        { icon: Users, label: "Team Leadership" },
-        { icon: Rocket, label: "Cloud Architecture" },
-        { icon: Award, label: "Accessibility (a11y)" }
+        { icon: Code2, label: t('about.skills.fullstack') },
+        { icon: Users, label: t('about.skills.leadership') },
+        { icon: Rocket, label: t('about.skills.cloud') },
+        { icon: Award, label: t('about.skills.a11y') }
     ];
 
     return (
@@ -26,7 +28,7 @@ export default function AboutSection() {
                         className="md:col-span-3"
                     >
                         <p className="text-[#666] text-xs tracking-[0.3em] uppercase font-medium">
-                            About Me
+                            {t('about.label')}
                         </p>
                     </motion.div>
 
@@ -38,8 +40,7 @@ export default function AboutSection() {
                             transition={{ duration: 0.7, delay: 0.1 }}
                             className="text-white text-2xl md:text-3xl lg:text-4xl font-light leading-[1.4] tracking-[-0.02em]"
                         >
-                            Más allá del código: ingeniero de soluciones 
-                            escalables y accesibles.
+                            {t('about.title')}
                         </motion.p>
 
                         <motion.div
@@ -49,16 +50,10 @@ export default function AboutSection() {
                             className="grid md:grid-cols-2 gap-8 pt-8"
                         >
                             <p className="text-[#aaa] text-base leading-relaxed">
-                                Combino ingeniería de software avanzada con liderazgo técnico. 
-                                Mi enfoque va más allá del código: optimizo rendimiento, 
-                                garantizo accesibilidad (a11y) y diseño arquitecturas escalables 
-                                en la nube con AWS.
+                                {t('about.desc1')}
                             </p>
                             <p className="text-[#aaa] text-base leading-relaxed">
-                                Con experiencia liderando equipos en consultoras de primer nivel 
-                                y como fundador de una plataforma fintech activa, traigo una 
-                                obsesión por la calidad, el performance y el código limpio a 
-                                cada proyecto.
+                                {t('about.desc2')}
                             </p>
                         </motion.div>
 
@@ -85,15 +80,15 @@ export default function AboutSection() {
                             <div className="flex flex-wrap gap-x-16 gap-y-8 pt-8 border-t border-[#222]">
                                 <div>
                                     <p className="text-white text-4xl md:text-5xl font-light tracking-[-0.02em]">7+</p>
-                                    <p className="text-[#666] text-sm mt-2">Años de Experiencia</p>
+                                    <p className="text-[#666] text-sm mt-2">{t('about.metrics.years')}</p>
                                 </div>
                                 <div>
                                     <p className="text-white text-4xl md:text-5xl font-light tracking-[-0.02em]">270+</p>
-                                    <p className="text-[#666] text-sm mt-2">Comercios Activos</p>
+                                    <p className="text-[#666] text-sm mt-2">{t('about.metrics.merchants')}</p>
                                 </div>
                                 <div>
                                     <p className="text-white text-4xl md:text-5xl font-light tracking-[-0.02em]">2.5K</p>
-                                    <p className="text-[#666] text-sm mt-2">Transacciones/Mes</p>
+                                    <p className="text-[#666] text-sm mt-2">{t('about.metrics.transactions')}</p>
                                 </div>
                             </div>
                         </motion.div>

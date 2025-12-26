@@ -1,7 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
+    const { t } = useTranslation();
 
     return (
         <footer className="py-12 bg-black border-t border-[#1a1a1a] px-6 md:px-12 lg:px-24">
@@ -9,19 +11,19 @@ export default function Footer() {
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                     <div>
                         <p className="text-white text-lg font-light tracking-[-0.01em]">
-                            Mateo Digliodo
+                            {t('nav.brand')}
                         </p>
                         <p className="text-[#666] text-sm mt-1">
-                            Software Engineer · Team Lead · Cloud Architect
+                            {t('hero.role')}
                         </p>
                     </div>
                     <div className="flex items-center gap-6">
                         <p className="text-[#666] text-sm">
-                            © {currentYear} All rights reserved
+                            © {currentYear} {t('footer.rights')}
                         </p>
                         <span className="text-[#333]">•</span>
                         <p className="text-[#666] text-xs">
-                            Built with React & Tailwind
+                            {t('footer.built_with')}
                         </p>
                     </div>
                 </div>

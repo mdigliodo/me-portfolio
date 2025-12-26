@@ -1,0 +1,226 @@
+{
+    "nav": {
+        "brand": "M. Digliodo",
+        "about": "Sobre mí",
+        "projects": "Proyectos",
+        "hire": "Contratar",
+        "contact": "Contacto"
+    },
+    "hero": {
+        "role": "Software Engineer · Team Lead · Cloud Architect",
+        "name": "Mateo",
+        "surname": "Digliodo",
+        "tagline": "Transformando la complejidad en experiencias digitales excepcionales.",
+        "description": "Construyendo soluciones escalables y accesibles. 7+ años de experiencia transformando ideas en productos digitales robustos.",
+        "cta_projects": "Ver Proyectos",
+        "cta_contact": "Contáctame"
+    },
+    "about": {
+        "label": "Sobre Mí",
+        "title": "Más allá del código: ingeniero de soluciones escalables y accesibles.",
+        "desc1": "Combino ingeniería de software avanzada con liderazgo técnico. Mi enfoque va más allá del código: optimizo rendimiento, garantizo accesibilidad (a11y) y diseño arquitecturas escalables en la nube con AWS.",
+        "desc2": "Con experiencia liderando equipos en consultoras de primer nivel y como fundador de una plataforma fintech activa, traigo una obsesión por la calidad, el performance y el código limpio a cada proyecto.",
+        "skills": {
+            "fullstack": "Full Stack Development",
+            "leadership": "Team Leadership",
+            "cloud": "Cloud Architecture",
+            "a11y": "Accessibility (a11y)"
+        },
+        "metrics": {
+            "years": "Años de Experiencia",
+            "merchants": "Comercios Activos",
+            "transactions": "Transacciones/Mes"
+        }
+    },
+    "services": {
+        "label": "Servicios",
+        "heading": "Expertise técnico con visión de producto",
+        "items": [
+            {
+                "title": "Software Engineering",
+                "description": "Desarrollo Full Stack con Angular, Node.js, NestJS y arquitectura Cloud con AWS. Soluciones robustas, escalables y mantenibles desde el diseño hasta el deployment."
+            },
+            {
+                "title": "Liderazgo Técnico",
+                "description": "Dirección de equipos de desarrollo, refactorización de sistemas legacy, implementación de mejores prácticas y optimización de performance. Experiencia liderando equipos en Minsait."
+            },
+            {
+                "title": "Product Development",
+                "description": "Desde la concepción hasta el lanzamiento. Experiencia fundando y desarrollando Mutual IAC, una plataforma fintech con +270 comercios activos procesando 2.5K transacciones mensuales."
+            }
+        ]
+    },
+    "projects": {
+        "label": "Portfolio",
+        "heading": "Proyectos que generan impacto real",
+        "more_details": "¿Quieres ver más detalles técnicos?",
+        "view_github": "Ver repositorios en GitHub",
+        "featured_badge": "Destacado",
+        "items": [
+            {
+                "company": "Mutual IAC",
+                "role": "Founder & Full-stack Developer",
+                "period": "Proyecto",
+                "description": "Plataforma fintech que conecta comercios y consumidores con un sistema de crédito mutualista. Lideré el desarrollo completo desde la concepción hasta el escalado.",
+                "impact": [
+                    {
+                        "metric": "270+",
+                        "label": "Comercios adheridos"
+                    },
+                    {
+                        "metric": "2.5K",
+                        "label": "Transacciones mensuales"
+                    }
+                ]
+            },
+            {
+                "company": "Minsait (Indra)",
+                "role": "Angular Team Lead",
+                "period": "Proyecto",
+                "description": "Lideré equipo de desarrollo en proyecto gubernamental de alto impacto. Implementé estándares de accesibilidad (a11y) y optimicé performance de aplicaciones críticas.",
+                "impact": [
+                    {
+                        "metric": "40%",
+                        "label": "Mejora en performance"
+                    },
+                    {
+                        "metric": "100%",
+                        "label": "Compliance a11y"
+                    }
+                ]
+            },
+            {
+                "company": "Gasco",
+                "role": "Full-stack Developer",
+                "period": "Proyecto",
+                "description": "Sistema nacional de distribución de gas en Chile. Desarrollé interfaces altamente accesibles y escalables para operadores en todo el país.",
+                "impact": [
+                    {
+                        "metric": "Nacional",
+                        "label": "Cobertura"
+                    },
+                    {
+                        "metric": "24/7",
+                        "label": "Disponibilidad"
+                    }
+                ]
+            },
+            {
+                "company": "Transvip",
+                "role": "Full-stack Developer",
+                "period": "Proyecto",
+                "description": "Migraciones complejas, implementación de microfrontends y desarrollo de soluciones Web3 para tokenización de activos.",
+                "impact": [
+                    {
+                        "metric": "Web3",
+                        "label": "Blockchain integration"
+                    },
+                    {
+                        "metric": "Microfrontends",
+                        "label": "Architecture"
+                    }
+                ]
+            },
+            {
+                "company": "K-Sports Fantasy",
+                "role": "Full-stack Developer",
+                "period": "Proyecto",
+                "description": "Plataforma de Fantasy Football con economía propia. Permite adquirir jugadores (cromos), tácticas y gestionar equipos cuyo rendimiento depende de la performance real de los deportistas.",
+                "impact": [
+                    {
+                        "metric": "Gameplay",
+                        "label": "Fantasy Sports"
+                    },
+                    {
+                        "metric": "Economy",
+                        "label": "In-game Market"
+                    }
+                ]
+            },
+            {
+                "company": "GToken",
+                "role": "Full-stack Developer",
+                "period": "Proyecto",
+                "description": "Plataforma de inversión para la industria de cría de caballos de polo. Los GTokens representan derechos sobre la venta futura, permitiendo participación en etapas tempranas.",
+                "impact": [
+                    {
+                        "metric": "Tokenization",
+                        "label": "Real World Assets"
+                    },
+                    {
+                        "metric": "Invest",
+                        "label": "Platform"
+                    }
+                ]
+            },
+            {
+                "company": "FAN Access Network",
+                "role": "Full-stack Developer",
+                "period": "Proyecto",
+                "description": "Marketplace Web3 para creadores de contenido. Facilita la oferta de productos y experiencias únicas directamente a la comunidad, eliminando intermediarios.",
+                "impact": [
+                    {
+                        "metric": "Web3",
+                        "label": "Creator Economy"
+                    },
+                    {
+                        "metric": "D2C",
+                        "label": "Direct Comms"
+                    }
+                ]
+            },
+            {
+                "company": "Zurich",
+                "role": "Frontend Developer / UX",
+                "period": "Proyecto",
+                "description": "Nuevo portal privado para corredores de seguros. Centralización de información y rediseño completo UX/UI basado en levantamiento de necesidades del negocio.",
+                "impact": [
+                    {
+                        "metric": "Portal",
+                        "label": "B2B System"
+                    },
+                    {
+                        "metric": "UX/UI",
+                        "label": "Revamp"
+                    }
+                ]
+            }
+        ]
+    },
+    "pricing": {
+        "label": "Colaboración & Freelance",
+        "title": "Servicios Profesionales on-demand",
+        "description": "Disponibilidad full-time para sumar valor a tu equipo o proyecto desde el primer día. Sin overhead, enfocado en resultados.",
+        "availability": "Disponible Full-time",
+        "model": {
+            "title": "Modelo por Hora",
+            "note": "Precio promedio. El valor final depende de la complejidad técnica, duración y stack tecnológico.",
+            "cta": "Agendar Análisis Gratuito",
+            "subtext": "Hablemos sin compromiso sobre tu proyecto para entender tus necesidades reales."
+        },
+        "features": [
+            "Análisis de requerimientos",
+            "Arquitectura escalable",
+            "Code reviews & Mentoring",
+            "Desarrollo Frontend & Backend",
+            "Optimización & Performance",
+            "Integración de APIs & Cloud"
+        ],
+        "stats": {
+            "years": "Años Experiencia",
+            "availability": "Disponibilidad",
+            "remote": "Alcance Remoto"
+        }
+    },
+    "contact": {
+        "label": "Contacto",
+        "title": "Construyamos algo escalable juntos",
+        "description": "¿Tienes un proyecto en mente? ¿Necesitas un líder técnico que entienda tanto el código como el negocio? Hablemos sobre cómo puedo ayudarte a construir soluciones que escalen.",
+        "availability_note": "Disponible para proyectos freelance y posiciones de liderazgo técnico",
+        "download_cv": "Descargar CV"
+    },
+    "footer": {
+        "rights": "Todos los derechos reservados",
+        "built_with": "Creado con React & Tailwind"
+    }
+}

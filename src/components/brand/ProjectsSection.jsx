@@ -1,109 +1,34 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ExternalLink, TrendingUp } from "lucide-react";
-
-const projects = [
-    {
-        company: "Mutual IAC",
-        role: "Founder & Full-stack Developer",
-        period: "Project",
-        description: "Plataforma fintech que conecta comercios y consumidores con un sistema de crédito mutualista. Lideré el desarrollo completo desde la concepción hasta el escalado.",
-        impact: [
-            { metric: "270+", label: "Comercios adheridos" },
-            { metric: "2.5K", label: "Transacciones mensuales" }
-        ],
-        tech: ["Angular", "Material Design", "React", "Node.js", "MySQL", "AWS"],
-        featured: true
-    },
-    {
-        company: "Minsait (Indra)",
-        role: "Angular Team Lead",
-        period: "Project",
-        description: "Lideré equipo de desarrollo en proyecto gubernamental de alto impacto. Implementé estándares de accesibilidad (a11y) y optimicé performance de aplicaciones críticas.",
-        impact: [
-            { metric: "40%", label: "Mejora en performance" },
-            { metric: "100%", label: "Compliance a11y" }
-        ],
-        tech: ["Angular", "TypeScript", "Team Leadership", "Accessibility"],
-        featured: true
-    },
-    {
-        company: "Gasco",
-        role: "Full-stack Developer",
-        period: "Project",
-        description: "Sistema nacional de distribución de gas en Chile. Desarrollé interfaces altamente accesibles y escalables para operadores en todo el país.",
-        impact: [
-            { metric: "Nacional", label: "Cobertura" },
-            { metric: "24/7", label: "Disponibilidad" }
-        ],
-        tech: ["Angular", "Node.js"],
-        featured: false
-    },
-    {
-        company: "Transvip",
-        role: "Full-stack Developer",
-        period: "Project",
-        description: "Migraciones complejas, implementación de microfrontends y desarrollo de soluciones Web3 para tokenización de activos.",
-        impact: [
-            { metric: "Web3", label: "Blockchain integration" },
-            { metric: "Microfrontends", label: "Architecture" }
-        ],
-        tech: ["Angular", "React", "Blockchain", "Microservices"],
-        featured: false
-    },
-    {
-        company: "K-Sports Fantasy",
-        role: "Full-stack Developer",
-        period: "Project",
-        description: "Plataforma de Fantasy Football con economía propia. Permite adquirir jugadores (cromos), tácticas y gestionar equipos cuyo rendimiento depende de la performance real de los deportistas.",
-        impact: [
-            { metric: "Gameplay", label: "Fantasy Sports" },
-            { metric: "Economy", label: "In-game Market" }
-        ],
-        tech: ["Web3", "Angular", "Ionic", "Node.js", "Gamification"],
-        featured: false
-    },
-    {
-        company: "GToken",
-        role: "Full-stack Developer",
-        period: "Project",
-        description: "Plataforma de inversión para la industria de cría de caballos de polo. Los GTokens representan derechos sobre la venta futura, permitiendo participación en etapas tempranas.",
-        impact: [
-            { metric: "Tokenization", label: "Real World Assets" },
-            { metric: "Invest", label: "Platform" }
-        ],
-        tech: ["Web3", "Angular", "Ionic", "Node.js", "Smart Contracts"],
-        featured: false
-    },
-    {
-        company: "FAN Access Network",
-        role: "Full-stack Developer",
-        period: "Project",
-        description: "Marketplace Web3 para creadores de contenido. Facilita la oferta de productos y experiencias únicas directamente a la comunidad, eliminando intermediarios.",
-        impact: [
-            { metric: "Web3", label: "Creator Economy" },
-            { metric: "D2C", label: "Direct Comms" }
-        ],
-        tech: ["Web3", "Angular", "Ionic", "Node.js", "Marketplace", "Community"],
-        featured: false
-    },
-    {
-        company: "Zurich",
-        role: "Frontend Developer / UX",
-        period: "Project",
-        description: "Nuevo portal privado para corredores de seguros. Centralización de información y rediseño completo UX/UI basado en levantamiento de necesidades del negocio.",
-        impact: [
-            { metric: "Portal", label: "B2B System" },
-            { metric: "UX/UI", label: "Revamp" }
-        ],
-        tech: ["Angular", "Node.js", "UX Research", "Insurance"],
-        featured: false
-    }
-];
+import { useTranslation } from "react-i18next";
 
 export default function ProjectsSection() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const { t } = useTranslation();
+
+    const techStacks = [
+        ["Angular", "Material Design", "React", "Node.js", "MySQL", "AWS"], // Mutual IAC
+        ["Angular", "TypeScript", "Team Leadership", "Accessibility"], // Minsait
+        ["Angular", "Node.js"], // Gasco
+        ["Angular", "React", "Blockchain", "Microservices"], // Transvip
+        ["Web3", "Angular", "Ionic", "Node.js", "Gamification"], // K-Sports
+        ["Web3", "Angular", "Ionic", "Node.js", "Smart Contracts"], // GToken
+        ["Web3", "Angular", "Ionic", "Node.js", "Marketplace", "Community"], // FAN
+        ["Angular", "Node.js", "UX Research", "Insurance"] // Zurich
+    ];
+    
+    // Featured status
+    const featuredStatus = [true, true, false, false, false, false, false, false];
+
+    const projects = t('projects.items', { returnObjects: true }).map((item, index) => {
+        return {
+            ...item,
+            tech: techStacks[index],
+            featured: featuredStatus[index]
+        };
+    });
 
     return (
         <section id="projects" className="py-32 md:py-40 bg-[#0a0a0a] px-6 md:px-12 lg:px-24">
@@ -115,10 +40,10 @@ export default function ProjectsSection() {
                     className="mb-20"
                 >
                     <p className="text-[#666] text-xs tracking-[0.3em] uppercase font-medium mb-6">
-                        Portfolio
+                        {t('projects.label')}
                     </p>
                     <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light leading-[1.2] tracking-[-0.02em] max-w-3xl">
-                        Proyectos que generan impacto real
+                        {t('projects.heading')}
                     </h2>
                 </motion.div>
 
@@ -139,7 +64,7 @@ export default function ProjectsSection() {
                                 <div className="absolute top-4 right-4">
                                     <span className="text-[#666] text-xs px-3 py-1 border border-[#333] rounded-full flex items-center gap-1">
                                         <TrendingUp className="w-3 h-3" />
-                                        Featured
+                                        {t('projects.featured_badge')}
                                     </span>
                                 </div>
                             )}
@@ -197,7 +122,7 @@ export default function ProjectsSection() {
                     className="mt-16 pt-16 border-t border-[#222] text-center"
                 >
                     <p className="text-[#666] text-sm mb-6">
-                        ¿Quieres ver más detalles técnicos?
+                        {t('projects.more_details')}
                     </p>
                     <a
                         href="https://github.com/mdigliodo"
@@ -205,7 +130,7 @@ export default function ProjectsSection() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 text-white text-sm tracking-wide hover:text-[#aaa] transition-colors duration-300 group"
                     >
-                        <span>Ver repositorios en GitHub</span>
+                        <span>{t('projects.view_github')}</span>
                         <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
                     </a>
                 </motion.div>

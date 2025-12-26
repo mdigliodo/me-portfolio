@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { createPageUrl } from "./utils";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Layout({ children, currentPageName }) {
     const [scrolled, setScrolled] = useState(false);
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const { t, i18n } = useTranslation();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,6 +24,11 @@ export default function Layout({ children, currentPageName }) {
             element.scrollIntoView({ behavior: 'smooth' });
         }
         setMobileMenuOpen(false);
+    };
+
+    const toggleLanguage = () => {
+        const newLang = i18n.language === 'en' ? 'es' : 'en';
+        i18n.changeLanguage(newLang);
     };
 
     return (
@@ -66,7 +73,7 @@ export default function Layout({ children, currentPageName }) {
                             to={createPageUrl("Home")}
                             className="text-white text-lg font-light tracking-[-0.01em] hover:text-[#aaa] transition-colors duration-300"
                         >
-                            M. Digliodo
+                            {t('nav.brand')}
                         </Link>
 
                         {/* Desktop Navigation */}
@@ -75,31 +82,48 @@ export default function Layout({ children, currentPageName }) {
                                 onClick={() => scrollToSection('about')}
                                 className="text-[#888] text-sm tracking-wide hover:text-white transition-colors duration-300"
                             >
-                                About
+                                {t('nav.about')}
                             </button>
                             <button
                                 onClick={() => scrollToSection('projects')}
                                 className="text-[#888] text-sm tracking-wide hover:text-white transition-colors duration-300"
                             >
-                                Proyectos
+                                {t('nav.projects')}
                             </button>
+                            
+                            <button
+                                onClick={toggleLanguage}
+                                className="text-[#888] text-sm tracking-wide hover:text-white transition-colors duration-300 flex items-center gap-2"
+                            >
+                                <Globe className="w-4 h-4" />
+                                <span className="uppercase">{i18n.language === 'en' ? 'ES' : 'EN'}</span>
+                            </button>
+
                             <a
                                 href="#contact"
                                 onClick={(e) => { e.preventDefault(); scrollToSection('contact'); }}
                                 className="px-5 py-2.5 bg-white text-black text-sm tracking-wide hover:bg-[#ddd] transition-colors duration-300"
                             >
-                                Contratar
+                                {t('nav.hire')}
                             </a>
                         </div>
 
                         {/* Mobile Menu Button */}
-                        <button
-                            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-                            className="md:hidden p-2 text-white"
-                            aria-label="Toggle menu"
-                        >
-                            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-                        </button>
+                        <div className="md:hidden flex items-center gap-4">
+                            <button
+                                onClick={toggleLanguage}
+                                className="text-white p-2"
+                            >
+                                <span className="uppercase text-sm font-medium">{i18n.language === 'en' ? 'ES' : 'EN'}</span>
+                            </button>
+                            <button
+                                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+                                className="p-2 text-white"
+                                aria-label="Toggle menu"
+                            >
+                                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                            </button>
+                        </div>
                     </div>
                 </div>
             </motion.nav>
@@ -119,19 +143,19 @@ export default function Layout({ children, currentPageName }) {
                                 onClick={() => scrollToSection('about')}
                                 className="text-white text-2xl font-light text-left"
                             >
-                                About
+                                {t('nav.about')}
                             </button>
                             <button
                                 onClick={() => scrollToSection('projects')}
                                 className="text-white text-2xl font-light text-left"
                             >
-                                Proyectos
+                                {t('nav.projects')}
                             </button>
                             <button
                                 onClick={() => scrollToSection('contact')}
                                 className="text-white text-2xl font-light text-left"
                             >
-                                Contacto
+                                {t('nav.contact')}
                             </button>
                         </div>
                     </motion.div>

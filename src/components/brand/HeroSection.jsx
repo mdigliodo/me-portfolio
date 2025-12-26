@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
+    const { t } = useTranslation();
+
     const scrollToProjects = () => {
         const element = document.getElementById('projects');
         if (element) {
@@ -26,7 +29,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
                 >
                     <p className="text-[#888] text-xs tracking-[0.3em] uppercase mb-8 font-medium">
-                        Software Engineer · Team Lead · Cloud Architect
+                        {t('hero.role')}
                     </p>
                 </motion.div>
 
@@ -36,8 +39,8 @@ export default function HeroSection() {
                     transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
                     className="text-white text-6xl md:text-7xl lg:text-8xl font-light leading-[1.05] tracking-[-0.03em] mb-6"
                 >
-                    Mateo<br />
-                    <span className="font-extralight text-[#666]">Digliodo</span>
+                    {t('hero.name')}<br />
+                    <span className="font-extralight text-[#666]">{t('hero.surname')}</span>
                 </motion.h1>
 
                 <motion.div
@@ -47,11 +50,10 @@ export default function HeroSection() {
                     className="max-w-2xl mb-8"
                 >
                     <p className="text-[#aaa] text-xl md:text-2xl leading-relaxed font-light mb-4">
-                        Transformando la complejidad en experiencias digitales excepcionales.
+                        {t('hero.tagline')}
                     </p>
                     <p className="text-[#666] text-base md:text-lg leading-relaxed">
-                        Construyendo soluciones escalables y accesibles. 7+ años de experiencia 
-                        transformando ideas en productos digitales robustos.
+                        {t('hero.description')}
                     </p>
                 </motion.div>
 
@@ -65,13 +67,13 @@ export default function HeroSection() {
                         onClick={scrollToProjects}
                         className="px-8 py-4 bg-white text-black text-sm tracking-wide font-medium hover:bg-[#ddd] transition-all duration-300"
                     >
-                        Ver Proyectos
+                        {t('hero.cta_projects')}
                     </button>
                     <a
                         href="#contact"
                         className="px-8 py-4 border border-[#333] text-white text-sm tracking-wide font-medium hover:border-white transition-all duration-300"
                     >
-                        Contáctame
+                        {t('hero.cta_contact')}
                     </a>
                 </motion.div>
 

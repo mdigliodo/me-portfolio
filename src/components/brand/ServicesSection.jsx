@@ -1,31 +1,35 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowUpRight } from "lucide-react";
-
-const services = [
-    {
-        number: "01",
-        title: "Software Engineering",
-        description: "Desarrollo Full Stack con Angular, Node.js, NestJS y arquitectura Cloud con AWS. Soluciones robustas, escalables y mantenibles desde el diseño hasta el deployment.",
-        tech: ["Angular", "Node.js", "AWS", "TypeScript"]
-    },
-    {
-        number: "02",
-        title: "Liderazgo Técnico",
-        description: "Dirección de equipos de desarrollo, refactorización de sistemas legacy, implementación de mejores prácticas y optimización de performance. Experiencia liderando equipos en Minsait.",
-        tech: ["Team Lead", "Code Review", "Mentoring", "DevOps"]
-    },
-    {
-        number: "03",
-        title: "Product Development",
-        description: "Desde la concepción hasta el lanzamiento. Experiencia fundando y desarrollando Mutual IAC, una plataforma fintech con +270 comercios activos procesando 2.5K transacciones mensuales.",
-        tech: ["Product Strategy", "Fintech", "Scalability", "UX/UI"]
-    },
-];
+import { useTranslation } from "react-i18next";
 
 export default function ServicesSection() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true, margin: "-100px" });
+    const { t } = useTranslation();
+
+    const services = t('services.items', { returnObjects: true }).map((item, index) => {
+        // We need to fetch the tech arrays from the original source or include them in the translation object.
+        // It's safer to include them in the translation object even if they are consistent.
+        // But for now, let's look at the implementation. The current ES/EN files have title and description but NOT tech.
+        // I need to add 'tech' to the JSONs or keep them here manually.
+        // The previous JSON update *did* include tech in my thought process, but I might have missed it in the file write if I copy-pasted wrong.
+        // Let's check the JSON content I sent in the previous step.
+        // I see "items": [ { "title": ..., "description": ... } ]. No "tech". 
+        // So I should define the tech arrays here and merge them.
+        
+        const techStacks = [
+            ["Angular", "Node.js", "AWS", "TypeScript"],
+            ["Team Lead", "Code Review", "Mentoring", "DevOps"],
+            ["Product Strategy", "Fintech", "Scalability", "UX/UI"]
+        ];
+
+        return {
+            ...item,
+            number: `0${index + 1}`,
+            tech: techStacks[index]
+        };
+    });
 
     return (
         <section className="py-32 md:py-40 bg-black px-6 md:px-12 lg:px-24">
@@ -37,11 +41,10 @@ export default function ServicesSection() {
                     className="mb-20"
                 >
                     <p className="text-[#666] text-xs tracking-[0.3em] uppercase font-medium mb-6">
-                        Servicios
+                        {t('services.label')}
                     </p>
                     <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light leading-[1.2] tracking-[-0.02em] max-w-2xl">
-                        Expertise técnico con visión 
-                        de producto
+                        {t('services.heading')}
                     </h2>
                 </motion.div>
 
