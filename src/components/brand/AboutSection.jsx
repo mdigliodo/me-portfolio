@@ -83,7 +83,7 @@ export default function AboutSection() {
                                     <p className="text-[#666] text-sm mt-2">{t('about.metrics.years')}</p>
                                 </div>
                                 <div>
-                                    <p className="text-white text-4xl md:text-5xl font-light tracking-[-0.02em]">270+</p>
+                                    <p className="text-white text-4xl md:text-5xl font-light tracking-[-0.02em]">10+</p>
                                     <p className="text-[#666] text-sm mt-2">{t('about.metrics.projects')}</p>
                                 </div>
                             </div>
