@@ -28,8 +28,7 @@
         },
         "metrics": {
             "years": "Years of Experience",
-            "merchants": "Active Merchants",
-            "transactions": "Transactions/Month"
+            "projects": "Completed Projects"
         }
     },
     "services": {
