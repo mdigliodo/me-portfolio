@@ -5,7 +5,6 @@ import HeroSection from "@/components/brand/HeroSection";
 const AboutSection = lazy(() => import("@/components/brand/AboutSection"));
 const ServicesSection = lazy(() => import("@/components/brand/ServicesSection"));
 const ProjectsSection = lazy(() => import("@/components/brand/ProjectsSection"));
-const PricingSection = lazy(() => import("@/components/brand/PricingSection"));
 const ContactSection = lazy(() => import("@/components/brand/ContactSection"));
 const Footer = lazy(() => import("@/components/brand/Footer"));
 
@@ -24,7 +23,6 @@ export default function Home() {
                 <AboutSection />
                 <ServicesSection />
                 <ProjectsSection />
-                <PricingSection />
                 <ContactSection />
                 <Footer />
             </Suspense>

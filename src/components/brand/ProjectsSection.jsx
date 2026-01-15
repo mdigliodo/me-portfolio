@@ -12,11 +12,11 @@ export default function ProjectsSection() {
         ["Angular", "Material Design", "React", "Node.js", "MySQL", "AWS"], // Mutual IAC
         ["Angular", "TypeScript", "Team Leadership", "Accessibility"], // Minsait
         ["Angular", "Node.js"], // Gasco
-        ["Angular", "React", "Blockchain", "Microservices"], // Transvip
+        ["Angular", "React", "Microservices", "API integrations"], // Transvip
         ["Web3", "Angular", "Ionic", "Node.js", "Gamification"], // K-Sports
-        ["Web3", "Angular", "Ionic", "Node.js", "Smart Contracts"], // GToken
-        ["Web3", "Angular", "Ionic", "Node.js", "Marketplace", "Community"], // FAN
-        ["Angular", "Node.js", "UX Research", "Insurance"] // Zurich
+        ["Web3", "Angular", "Ionic", "Node.js", "Smart Contracts", "Open new markets", "Payment Processing", "API integrations"], // GToken
+        ["Web3", "Angular", "Ionic", "Node.js", "Marketplace", "Community", "Payment Processing", "API integrations"], // FAN
+        ["Angular", "Node.js", "UX Research", "Insurance", "API integrations"] // Zurich
     ];
     
     // Featured status

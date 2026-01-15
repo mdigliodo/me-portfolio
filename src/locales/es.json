@@ -76,15 +76,15 @@
                 "company": "Minsait (Indra)",
                 "role": "Angular Team Lead",
                 "period": "Proyecto",
-                "description": "Lideré equipo de desarrollo en proyecto gubernamental de alto impacto. Implementé estándares de accesibilidad (a11y) y optimicé performance de aplicaciones críticas.",
+                "description": "Mejoré el rendimiento y la escalabilidad de la aplicación refactorizando código legacy, aplicando patrones de diseño y eliminando suscripciones redundantes. Mejoré la accesibilidad del sistema (a11y) añadiendo atributos y asegurando cumplimiento de estándares, permitiendo acceso inclusivo a poblaciones vulnerables. Anticipé necesidades de arquitectura e interoperabilidad en plataformas gubernamentales, asegurando una integración fluida y entregas puntuales de nuevas funcionalidades.",
                 "impact": [
                     {
-                        "metric": "40%",
-                        "label": "Mejora en performance"
+                        "metric": "2.4M+",
+                        "label": "Ciudadanos Impactados"
                     },
                     {
                         "metric": "100%",
-                        "label": "Compliance a11y"
+                        "label": "a11y & 96% Buenas Prácticas"
                     }
                 ]
             },
@@ -92,15 +92,15 @@
                 "company": "Gasco",
                 "role": "Full-stack Developer",
                 "period": "Proyecto",
-                "description": "Sistema nacional de distribución de gas en Chile. Desarrollé interfaces altamente accesibles y escalables para operadores en todo el país.",
+                "description": "Desarrollé una interfaz amigable para distribuidores oficiales de gas mejorando beneficios de clientes en un sistema de distribución nacional en Chile usando Angular. Enfocado en entender necesidades del cliente, diseñar soluciones escalables y componentes reutilizables, asegurando navegabilidad y accesibilidad, manteniendo alto rendimiento y código limpio bajo plazos ajustados.",
                 "impact": [
                     {
-                        "metric": "Nacional",
-                        "label": "Cobertura"
+                        "metric": "+1000",
+                        "label": "Distribuidores Activos"
                     },
                     {
-                        "metric": "24/7",
-                        "label": "Disponibilidad"
+                        "metric": "100%",
+                        "label": "Satisfacción Cliente"
                     }
                 ]
             },
@@ -108,15 +108,15 @@
                 "company": "Transvip",
                 "role": "Full-stack Developer",
                 "period": "Proyecto",
-                "description": "Migraciones complejas, implementación de microfrontends y desarrollo de soluciones Web3 para tokenización de activos.",
+                "description": "Migraciones complejas y desarrollo de plataforma B2B de transporte corporativo (tipo Uber/Cabify) en Santiago. Implementé arquitectura de microfrontends en React con Webpack, utilizada como caso de éxito y modelo para futuros clientes.",
                 "impact": [
                     {
-                        "metric": "Web3",
-                        "label": "Blockchain integration"
+                        "metric": "Referente",
+                        "label": "Arq. Micro-frontends"
                     },
                     {
-                        "metric": "Microfrontends",
-                        "label": "Architecture"
+                        "metric": "100%",
+                        "label": "Satisfacción Cliente"
                     }
                 ]
             },
@@ -156,15 +156,15 @@
                 "company": "FAN Access Network",
                 "role": "Full-stack Developer",
                 "period": "Proyecto",
-                "description": "Marketplace Web3 para creadores de contenido. Facilita la oferta de productos y experiencias únicas directamente a la comunidad, eliminando intermediarios.",
+                "description": "Marketplace Web3 para creadores musicales y artistas. Facilitó la venta de entradas para artistas top como Dillom. Implementé integraciones de pago fluidas y un diseño mobile responsive de alto rendimiento.",
                 "impact": [
                     {
-                        "metric": "Web3",
-                        "label": "Creator Economy"
+                        "metric": "Artistas Top",
+                        "label": "Venta Entradas (Dillom)"
                     },
                     {
-                        "metric": "D2C",
-                        "label": "Direct Comms"
+                        "metric": "100%",
+                        "label": "Pagos y UX exitosos"
                     }
                 ]
             },
