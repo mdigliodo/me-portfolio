@@ -4,26 +4,27 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         // Backgrounds
-        'bg-primary': '#000000',
-        'bg-secondary': '#0a0a0a',
-        'bg-tertiary': '#0f0f0f',
-        'bg-elevated': '#1a1a1a',
+        'bg-primary': 'var(--bg-primary)',
+        'bg-secondary': 'var(--bg-secondary)',
+        'bg-tertiary': 'var(--bg-tertiary)',
+        'bg-elevated': 'var(--bg-elevated)',
         // Borders
-        'border-subtle': '#1a1a1a',
-        'border-default': '#222222',
-        'border-medium': '#333333',
-        'border-strong': '#444444',
-        'border-emphasis': '#555555',
+        'border-subtle': 'var(--border-subtle)',
+        'border-default': 'var(--border-default)',
+        'border-medium': 'var(--border-medium)',
+        'border-strong': 'var(--border-strong)',
+        'border-emphasis': 'var(--border-emphasis)',
         // Text
-        'text-primary': '#ffffff',
-        'text-secondary': '#aaaaaa',
-        'text-tertiary': '#888888',
-        'text-muted': '#666666',
-        'text-subtle': '#444444',
+        'text-primary': 'var(--text-primary)',
+        'text-secondary': 'var(--text-secondary)',
+        'text-tertiary': 'var(--text-tertiary)',
+        'text-muted': 'var(--text-muted)',
+        'text-subtle': 'var(--text-subtle)',
         // Accent
         'accent-blue': 'rgb(59 130 246)',
         'accent-purple': 'rgb(168 85 247)',

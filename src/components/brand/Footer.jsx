@@ -6,23 +6,23 @@ export default function Footer() {
     const { t } = useTranslation();
 
     return (
-        <footer className="py-12 bg-black border-t border-[#1a1a1a] px-6 md:px-12 lg:px-24">
+        <footer className="py-12 bg-bg-primary border-t border-border-subtle px-6 md:px-12 lg:px-24">
             <div className="max-w-6xl mx-auto">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
                     <div>
-                        <p className="text-white text-lg font-light tracking-[-0.01em]">
+                        <p className="text-text-primary text-lg font-light tracking-[-0.01em]">
                             {t('nav.brand')}
                         </p>
-                        <p className="text-[#666] text-sm mt-1">
+                        <p className="text-text-muted text-sm mt-1">
                             {t('hero.role')}
                         </p>
                     </div>
                     <div className="flex items-center gap-6">
-                        <p className="text-[#666] text-sm">
+                        <p className="text-text-muted text-sm">
                             © {currentYear} {t('footer.rights')}
                         </p>
-                        <span className="text-[#333]">•</span>
-                        <p className="text-[#666] text-xs">
+                        <span className="text-text-tertiary">•</span>
+                        <p className="text-text-muted text-xs">
                             {t('footer.built_with')}
                         </p>
                     </div>

@@ -17,7 +17,7 @@ const SectionLoader = () => (
 
 export default function Home() {
     return (
-        <div className="min-h-screen bg-black">
+        <div className="min-h-screen bg-bg-primary">
             <HeroSection />
             <Suspense fallback={<SectionLoader />}>
                 <AboutSection />

@@ -6,30 +6,56 @@
 
 @layer base {
   :root {
-    /* Backgrounds */
+    /* Default Dark Mode Variables */
     --bg-primary: #000000;
     --bg-secondary: #0a0a0a;
     --bg-tertiary: #0f0f0f;
     --bg-elevated: #1a1a1a;
 
-    /* Borders */
     --border-subtle: #1a1a1a;
     --border-default: #222222;
     --border-medium: #333333;
     --border-strong: #444444;
     --border-emphasis: #555555;
 
-    /* Text Colors */
     --text-primary: #ffffff;
     --text-secondary: #aaaaaa;
     --text-tertiary: #888888;
     --text-muted: #666666;
     --text-subtle: #444444;
 
-    /* Accent Colors */
+    /* Accent Colors (Shared) */
     --accent-blue: rgb(59 130 246);
     --accent-purple: rgb(168 85 247);
     --accent-green: rgb(34 197 94);
+  }
+
+  :root.light {
+    /* Light Mode Variables */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f4f4f5;
+    /* Zinc 100 */
+    --bg-tertiary: #e4e4e7;
+    /* Zinc 200 */
+    --bg-elevated: #fafafa;
+    /* White/Zinc 50 */
+
+    --border-subtle: #e4e4e7;
+    --border-default: #d4d4d8;
+    --border-medium: #a1a1aa;
+    --border-strong: #71717a;
+    --border-emphasis: #52525b;
+
+    --text-primary: #18181b;
+    /* Zinc 950 */
+    --text-secondary: #52525b;
+    /* Zinc 600 */
+    --text-tertiary: #71717a;
+    /* Zinc 500 */
+    --text-muted: #a1a1aa;
+    /* Zinc 400 */
+    --text-subtle: #d4d4d8;
+    /* Zinc 300 */
   }
 
   body {

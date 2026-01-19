@@ -32,7 +32,7 @@ export default function ServicesSection() {
     });
 
     return (
-        <section className="py-32 md:py-40 bg-black px-6 md:px-12 lg:px-24">
+        <section className="py-32 md:py-40 bg-bg-primary px-6 md:px-12 lg:px-24">
             <div className="max-w-6xl mx-auto" ref={ref}>
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -40,10 +40,10 @@ export default function ServicesSection() {
                     transition={{ duration: 0.6 }}
                     className="mb-20"
                 >
-                    <p className="text-[#666] text-xs tracking-[0.3em] uppercase font-medium mb-6">
+                    <p className="text-text-muted text-xs tracking-[0.3em] uppercase font-medium mb-6">
                         {t('services.label')}
                     </p>
-                    <h2 className="text-white text-3xl md:text-4xl lg:text-5xl font-light leading-[1.2] tracking-[-0.02em] max-w-2xl">
+                    <h2 className="text-text-primary text-3xl md:text-4xl lg:text-5xl font-light leading-[1.2] tracking-[-0.02em] max-w-2xl">
                         {t('services.heading')}
                     </h2>
                 </motion.div>
@@ -55,18 +55,18 @@ export default function ServicesSection() {
                             initial={{ opacity: 0, y: 30 }}
                             animate={isInView ? { opacity: 1, y: 0 } : {}}
                             transition={{ duration: 0.6, delay: 0.1 * (index + 1) }}
-                            className="group p-8 border border-[#222] hover:border-[#444] transition-all duration-300 bg-[#0a0a0a]"
+                            className="group p-8 border border-border-default hover:border-border-strong transition-all duration-300 bg-bg-secondary"
                         >
-                            <span className="text-[#444] text-xs font-mono mb-6 block">{service.number}</span>
-                            <h3 className="text-white text-xl md:text-2xl font-light mb-4 group-hover:text-[#aaa] transition-colors duration-300">
+                            <span className="text-text-subtle text-xs font-mono mb-6 block">{service.number}</span>
+                            <h3 className="text-text-primary text-xl md:text-2xl font-light mb-4 group-hover:text-text-secondary transition-colors duration-300">
                                 {service.title}
                             </h3>
-                            <p className="text-[#888] text-sm leading-relaxed mb-6">
+                            <p className="text-text-tertiary text-sm leading-relaxed mb-6">
                                 {service.description}
                             </p>
-                            <div className="flex flex-wrap gap-2 pt-6 border-t border-[#1a1a1a]">
+                            <div className="flex flex-wrap gap-2 pt-6 border-t border-border-subtle">
                                 {service.tech.map((tech, idx) => (
-                                    <span key={idx} className="text-[#666] text-xs px-3 py-1 border border-[#222] rounded-full">
+                                    <span key={idx} className="text-text-muted text-xs px-3 py-1 border border-border-default rounded-full">
                                         {tech}
                                     </span>
                                 ))}
