@@ -21,7 +21,7 @@
     --text-primary: #ffffff;
     --text-secondary: #aaaaaa;
     --text-tertiary: #888888;
-    --text-muted: #666666;
+    --text-muted: #888888;
     --text-subtle: #444444;
 
     /* Accent Colors (Shared) */
@@ -50,12 +50,12 @@
     /* Zinc 950 */
     --text-secondary: #52525b;
     /* Zinc 600 */
-    --text-tertiary: #71717a;
+    --text-tertiary: #52525b;
+    /* Zinc 600 */
+    --text-muted: #71717a;
     /* Zinc 500 */
-    --text-muted: #a1a1aa;
+    --text-subtle: #a1a1aa;
     /* Zinc 400 */
-    --text-subtle: #d4d4d8;
-    /* Zinc 300 */
   }
 
   body {

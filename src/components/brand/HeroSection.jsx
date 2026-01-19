@@ -84,15 +84,18 @@ export default function HeroSection() {
                     className="flex items-center gap-6 mt-16"
                 >
                     <a href="https://github.com/mdigliodo" target="_blank" rel="noopener noreferrer" 
-                       className="text-text-muted hover:text-text-primary transition-colors duration-300">
+                       className="text-text-muted hover:text-text-primary transition-colors duration-300"
+                       aria-label="GitHub Profile">
                         <Github className="w-5 h-5" />
                     </a>
                     <a href="https://linkedin.com/in/mateodigliodo" target="_blank" rel="noopener noreferrer"
-                       className="text-text-muted hover:text-text-primary transition-colors duration-300">
+                       className="text-text-muted hover:text-text-primary transition-colors duration-300"
+                       aria-label="LinkedIn Profile">
                         <Linkedin className="w-5 h-5" />
                     </a>
                     <a href="mailto:mdigliodo@gmail.com"
-                       className="text-text-muted hover:text-text-primary transition-colors duration-300">
+                       className="text-text-muted hover:text-text-primary transition-colors duration-300"
+                       aria-label="Send Email">
                         <Mail className="w-5 h-5" />
                     </a>
                 </motion.div>
